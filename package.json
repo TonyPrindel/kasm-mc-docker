@@ -1,0 +1,24 @@
+{
+  "name": "kasm-mc-docker",
+  "version": "1.0.0",
+  "description": "Simple Docker image for running Minecraft servers. Based on linuxserver's kasmvnc image.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyPrindel/kasm-mc-docker.git"
+  },
+  "keywords": [
+    "minecraft",
+    "docker",
+    "vnc"
+  ],
+  "author": "Tony Prindel",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/TonyPrindel/kasm-mc-docker/issues"
+  },
+  "homepage": "https://github.com/TonyPrindel/kasm-mc-docker#readme"
+}
