@@ -1,10 +1,4 @@
-name: Docker Image CI
-
-on:
-  release:
-    types: [published]
-
-name: Create and publish a Docker image
+name: Create and publish to GitHub Images
 
 on:
   push:
@@ -45,3 +39,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          
