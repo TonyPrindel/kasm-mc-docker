@@ -1,0 +1,2 @@
+cd /server/
+sudo java ${USER_JAVA_ARGS} -jar ${JAR_NAME}
