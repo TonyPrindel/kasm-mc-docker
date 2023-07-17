@@ -18,4 +18,4 @@ ENV JAR_NAME=${JAR_NAME}
 
 COPY root /
 
-RUN apk add --no-cache openjdk${JAVA_VERSION};
+RUN apk add --no-cache --update openjdk${JAVA_VERSION};
