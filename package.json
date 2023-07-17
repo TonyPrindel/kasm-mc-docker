@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/TonyPrindel/kasm-mc-docker/issues"
   },
-  "homepage": "https://github.com/TonyPrindel/kasm-mc-docker#readme"
+  "homepage": "https://github.com/TonyPrindel/kasm-mc-docker#readme",
+  "publishConfig": {
+    "@TonyPrindel:registry": "https://npm.pkg.github.com"
+  }
 }
