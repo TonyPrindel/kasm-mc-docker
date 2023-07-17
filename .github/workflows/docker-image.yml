@@ -3,6 +3,9 @@ name: Create and publish to GitHub Images
 on:
   release:
     types: [published]
+  push:
+    branches:
+      - 'master'
     
 env:
   REGISTRY: ghcr.io
