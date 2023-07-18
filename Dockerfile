@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:alpine317
+FROM ghcr.io/linuxserver/baseimage-kasmvnc:alpine318
 
 LABEL org.opencontainers.image.source=https://github.com/TonyPrindel/kasm-mc-docker
 LABEL org.opencontainers.image.description="Basic Minecraft server Docker container based on linuxserver's kasmvnc."
