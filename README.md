@@ -35,10 +35,10 @@ See the below except from linuxserver on this issue and its solution:
 >
 >In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as below:
 >```bash
-  $ id username
-    uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
+>  $ id username
+>    uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 
-The environment variables you'll need to edit to match the host folder owner are provided below.
+The environment variables you'll need to edit to match the host folder owner are provided below:
 
 | ARGUMENT | DEFAULT |
 | -------- | ------- |
