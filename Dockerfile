@@ -23,13 +23,13 @@ VOLUME /server/
 EXPOSE 25565/tcp
 EXPOSE 25565/udp
 
+ENV JAVA_ARGS="-Xms1024M -Xmx1024M"
+ENV JAR_NAME="server.jar"
+ENV AUTO_RESTART="true"
+ENV PUID=1000
+ENV PGID=1000
+
+COPY defaults /defaults
+
 ARG JAVA_VERSION=17
-ARG USER_JAVA_ARGS="-Xms1024M -Xmx1024M"
-ARG JAR_NAME="server.jar"
-
-ENV USER_JAVA_ARGS=${USER_JAVA_ARGS}
-ENV JAR_NAME=${JAR_NAME}
-
-COPY root /
-
 RUN apk add --no-cache --update openjdk${JAVA_VERSION};

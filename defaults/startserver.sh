@@ -12,5 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+#!/bin/bash
+
 cd /server/
-sudo java ${USER_JAVA_ARGS} -jar ${JAR_NAME}
+java ${JAVA_ARGS} -jar ${JAR_NAME}
+
+# Automatically restart if we had an unexpected stop and AUTO_RESTART hasn't been disabled.
+while [ "$?" -ne 0 ] || [ "$AUTO_RESTART" = "true" ]
+do
+java ${JAVA_ARGS} -jar ${JAR_NAME}
+done
