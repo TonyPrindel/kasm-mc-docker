@@ -16,7 +16,7 @@ For a small vanilla server, you'll probably be fine with the default variables. 
 | ARGUMENT | DEFAULT | EXPLANATION |
 | -------- | ------- | ----------- |
 | JAVA_VERSION | 17 | Used to determine which Java version to install. May be changed to 8, or any other version so long as it's in the alpine repos. |
-| USER_JAVA_ARGS | -Xms1024M -Xmx1024M | Typical Java args. |
+| JAVA_ARGS | -Xms1024M -Xmx1024M | Typical Java args. |
 | JAR_NAME | server.jar | The name of the jar to run. |
 | AUTO_RESTART | true | Whether the server should automatically restart after a non-zero exit code. |
 

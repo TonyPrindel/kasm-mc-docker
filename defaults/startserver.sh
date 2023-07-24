@@ -1,4 +1,4 @@
-# Copyright [2023] [Tony Prindel]
+# Copyright 2023 Tony Prindel
 
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ cd /server/
 java ${JAVA_ARGS} -jar ${JAR_NAME}
 
 # Automatically restart if we had an unexpected stop and AUTO_RESTART hasn't been disabled.
-while [ "$?" -ne 0 ] || [ "$AUTO_RESTART" = "true" ]
+while [ "$?" -ne 0 ] && [ "$AUTO_RESTART" = "true" ]
 do
 java ${JAVA_ARGS} -jar ${JAR_NAME}
 done
