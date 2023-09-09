@@ -28,8 +28,6 @@ ENV JAR_NAME="server.jar"
 ENV AUTO_RESTART="true"
 ENV PUID=1000
 ENV PGID=1000
+ENV JAVA_VERSION=17
 
 COPY defaults /defaults
-
-ARG JAVA_VERSION=17
-RUN apk add --no-cache --update openjdk${JAVA_VERSION};

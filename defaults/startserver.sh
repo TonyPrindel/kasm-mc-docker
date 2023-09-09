@@ -14,6 +14,8 @@
 
 #!/bin/bash
 
+sudo apk add --no-cache --update openjdk${JAVA_VERSION}
+
 cd /server/
 java ${JAVA_ARGS} -jar ${JAR_NAME}
 
