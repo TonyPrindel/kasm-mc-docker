@@ -1,3 +1,5 @@
+Just a quick FYI that I'm considering this project complete for the time being. I'm going to be working on a fancier setup in the future. Thanks. :)
+
 # About
 
 This is a Minecraft server Docker image stemming from linuxserver's fantastic kasmvnc base.
